@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "uhs",
+      "script": "./bin/server.js",
+      "instances": 1,
+      "exec_mode": "fork_mode",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 8888,
+        "APIPORT": 3050,
+        "NODE_PATH": "./src"
+      }
+    }
+  ]
+}

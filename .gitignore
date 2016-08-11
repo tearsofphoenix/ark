@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+dist/
+build/
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+api/uploads
+/.happypack
+logs
+uploads
+src/plugins/*.zip
+src/plugins/test

@@ -1,0 +1,23 @@
+{
+  "name": "Dummy",
+  "id": "io.omk.uhs.plugin.dummy",
+  "dependencies": [],
+  "enabled": true,
+  "maintainers": [
+    {
+      "email": "lxm@omk.io",
+      "name": "lxm"
+    }
+  ],
+  "anchors": {
+    "url": "/dummy",
+    "sidebar": {
+      "name": "Dummy",
+      "link": "/dummy",
+      "icon": "bug big",
+      "roles": ["superadmin", "admin", "director", "doctor", "nurse"]
+    }
+  },
+  "main": "index.js",
+  "version": "0.0.1"
+}

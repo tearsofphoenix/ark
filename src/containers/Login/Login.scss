@@ -1,0 +1,43 @@
+@import "../../theme/mixins";
+
+.left {
+  height: 100%;
+  background-color: #00d0bd;
+  width: 60%;
+  float: left;
+  color: white;
+  font-size: 2rem
+}
+
+.title {
+  top: calc(50% - 45px);
+  text-align: right;
+  position: relative;
+  margin-right: 80px;
+  font-size: 45px;
+  line-height: 45px;
+}
+.subtitle {
+  @extend .title;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.loginPage {
+  height: 100%;
+}
+.formWrapper {
+  height: 100%;
+  width: 40%;
+  float: right;
+  @include vertical-center;
+  form {
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0 0 6px 4px #E9E9E9;
+    border-radius: 4px;
+  }
+}
+.error {
+  color: red;
+}

@@ -1,0 +1,38 @@
+.sidebar {
+  width: 70px;
+  z-index: 100;
+  overflow: hidden;
+  border-bottom: none;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  font-size: 14px;
+  white-space: normal;
+  border-right: 1px solid #e6ebf5;
+  background-color: #383F4B;
+
+  .header {
+    font-size: 1.1rem;
+    margin: 12px 0 0 12px;
+    color: white;
+  }
+  a {
+    position: relative;
+    display: block;
+    border: 1px solid transparent !important;
+    margin: 10px;
+    padding-top: 4px;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #959595;
+    background-color: #2C313B;
+    &:hover {
+      color: white !important;
+      svg {
+        stroke: white !important;
+      }
+    }
+  }
+}

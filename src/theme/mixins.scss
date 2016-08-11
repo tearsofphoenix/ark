@@ -1,0 +1,9 @@
+@mixin vertical-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin unselectable {
+  user-select: none;
+}

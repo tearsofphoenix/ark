@@ -1,0 +1,153 @@
+@import "../../theme/mixins";
+
+//pagination
+.paginationWrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  .previous {
+    @include unselectable;
+    display: inline-block;
+    margin-left: 100px;
+    line-height: 24px;
+    float: left !important;
+    cursor: pointer;
+  }
+  .next {
+    @include unselectable;
+    display: inline-block;
+    margin-right: 100px;
+    line-height: 24px;
+    float: right !important;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  @include unselectable;
+  display: inline-block;
+  list-style-type: disc;
+  line-height: 20px;
+  margin: 0 !important;
+  li {
+    display: inline;
+  }
+  .item, .itemCurrent {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: #666666;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+  .item {
+    &:hover, &:focus {
+      background-color: #F0F0F0;
+      color: #000;
+    }
+  }
+  .itemCurrent {
+    color: #00D0BD;
+    border: 2px solid #00D0BD;
+    background: transparent;
+  }
+}
+
+.empty {
+  @include vertical-center;
+  @include unselectable;
+  height: 90%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+// Default Table Style
+table {
+  thead {
+    th {
+      padding: 10px !important;
+      text-align: left;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+.ui.pagination.menu {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  .item {
+    min-width: initial;
+    margin: 0.625em 0.1875em;
+    padding: 0.1875em 0.625em;
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+.pagination {
+  margin-left: 0;
+  margin-bottom: 1rem;
+  a,
+  button {
+    color: #0a0a0a;
+  }
+  li {
+    font-size: 0.875rem;
+    margin-right: 0.0625rem;
+    display: none;
+    &:last-child,
+    &:first-child {
+      display: inline-block;
+    }
+  }
+  .current {
+    background: #00D0BD;
+    color: #fff;
+    cursor: default;
+    a {
+      color: #fff;
+    }
+  }
+  .disabled {
+    padding: 0.1875rem 0.625rem;
+    color: #cacaca;
+    cursor: not-allowed;
+    &:hover {
+      background: transparent;
+    }
+  }
+  &::after {
+    clear: both;
+  }
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+  .ellipsis::after {
+    content: '\2026';
+    padding: 0.1875rem 0.625rem;
+    color: #0a0a0a;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .pagination li {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0 10px;
+    margin-right: 0;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+  }
+}
